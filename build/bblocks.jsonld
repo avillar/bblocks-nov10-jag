@@ -1,7 +1,7 @@
 {
   "@context": [
     {
-      "@base": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master"
+      "@base": "https://avillar.github.io/bblocks-nov10-jag"
     },
     {
       "bblocks": "https://www.opengis.net/def/bblocks/",
@@ -216,7 +216,7 @@
   "metaRegistry": "https://w3id.org/ogc/bblocks/meta-register.json",
   "name": "Building Blocks - ISO JAG Building Blocks register",
   "abstract": "This is an example to illustrate the use of OGC Building Blocks.\n",
-  "modified": "2026-11-10T07:20:49.463338",
+  "modified": "2026-11-10T07:24:32.154515",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"2deb5c60331691186d997e4f6ae9aab18b548ce5",
@@ -226,30 +226,30 @@
   },
   "gitRepository": "https://github.com/avillar/bblocks-nov10-jag",
   "gitHubRepository": "https://github.com/avillar/bblocks-nov10-jag/blob/master/",
-  "baseURL": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/",
-  "viewerURL": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/",
-  "validationReport": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/tests/report.html",
-  "validationReportJson": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/tests/report.json",
+  "baseURL": "https://avillar.github.io/bblocks-nov10-jag/",
+  "viewerURL": "https://avillar.github.io/bblocks-nov10-jag/",
+  "validationReport": "https://avillar.github.io/bblocks-nov10-jag/build/tests/report.html",
+  "validationReportJson": "https://avillar.github.io/bblocks-nov10-jag/build/tests/report.json",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json"
   ],
-  "remoteCacheDir": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/annotated/_cache",
+  "remoteCacheDir": "https://avillar.github.io/bblocks-nov10-jag/build/annotated/_cache",
   "links": [
     {
       "rel": "self",
-      "href": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/register.json",
+      "href": "https://avillar.github.io/bblocks-nov10-jag/build/register.json",
       "type": "application/json",
       "title": "This Building Blocks Register in JSON format"
     },
     {
       "rel": "self",
-      "href": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/bblocks.ttl",
+      "href": "https://avillar.github.io/bblocks-nov10-jag/build/bblocks.ttl",
       "type": "text/turtle",
       "title": "This Building Blocks Register in RDF Turtle format"
     },
     {
       "rel": "self",
-      "href": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/bblocks.jsonld",
+      "href": "https://avillar.github.io/bblocks-nov10-jag/build/bblocks.jsonld",
       "type": "application/ld+json",
       "title": "This Building Blocks Register in JSON-LD format"
     }
@@ -262,85 +262,41 @@
   "skos:prefLabel": "Building Blocks - ISO JAG Building Blocks register",
   "hasConcepts": [
     {
-      "itemIdentifier": "iso.bbr.sample.jag.mySchema",
-      "$schema": "metaschema.yaml",
-      "name": "My Schema",
-      "abstract": "An example schema defining the set of properties of any type of object.",
+      "itemIdentifier": "iso.bbr.sample.jag.route",
+      "name": "Route",
+      "abstract": "A route: a road or path, described as a feature with a length in metres and a line geometry.",
       "status": "under-development",
-      "dateTimeAddition": "2023-04-05T00:00:00Z",
+      "dateTimeAddition": "2026-10-29T00:00:00Z",
       "itemClass": "schema",
-      "register": "ogc-building-block-register",
       "version": "0.1",
-      "link": "https://github.com/opengeospatial/bblock-template",
-      "sources": [
-        {
-          "title": "Sample source document",
-          "link": "https://example.com/sources/1"
-        }
-      ],
-      "tags": [
-        "templates"
-      ],
-      "shaclShapes": [
-        {
-          "prof:hasArtifact": [
-            "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/_sources/mySchema/shapes.shacl"
-          ],
-          "rdfs:seeAlso": "bblocks://iso.bbr.sample.jag.mySchema",
-          "prof:hasRole": "role:validation",
-          "dct:format": "text/turtle",
-          "dct:conformsTo": "shacl:"
-        }
-      ],
+      "shaclShapes": null,
       "dateOfLastChange": "2026-11-10",
-      "ldContext": {
-        "prof:hasArtifact": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/annotated/bbr/sample/jag/mySchema/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "schema": [
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/annotated/bbr/sample/jag/mySchema/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/annotated/bbr/sample/jag/mySchema/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/_sources/mySchema/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/_sources/mySchema/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/annotated/bbr/sample/jag/mySchema/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/_sources/mySchema/",
+      "sourceFiles": "https://avillar.github.io/bblocks-nov10-jag/_sources/route/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/avillar/bblocks-nov10-jag/blob/master/build/tests/bbr/sample/jag/mySchema/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/generateddocs/json-full/bbr/sample/jag/mySchema/index.json"
+          "url": "https://avillar.github.io/bblocks-nov10-jag/build/generateddocs/json-full/bbr/sample/jag/route/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/generateddocs/markdown/bbr/sample/jag/mySchema/index.md"
+          "url": "https://avillar.github.io/bblocks-nov10-jag/build/generateddocs/markdown/bbr/sample/jag/route/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/bblock/iso.bbr.sample.jag.mySchema"
+          "url": "https://avillar.github.io/bblocks-nov10-jag/bblock/iso.bbr.sample.jag.route"
         }
       },
-      "@id": "bblocks://iso.bbr.sample.jag.mySchema",
+      "@id": "bblocks://iso.bbr.sample.jag.route",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
         "dcat:Dataset",
         "bblocks:BBlock"
       ],
-      "skos:prefLabel": "My Schema",
+      "skos:prefLabel": "Route",
+      "ldContext": null,
+      "schema": null,
       "openAPIDocument": null,
       "ontology": null,
       "rdfData": [],
@@ -348,118 +304,13 @@
       "isProfileOf": null,
       "isDescribedBy": null,
       "skos:topConceptOf": {
-        "@id": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/"
-      }
-    },
-    {
-      "itemIdentifier": "iso.bbr.sample.jag.myFeature",
-      "name": "Custom Feature",
-      "abstract": "This examples shows a simple customisation for OGC API Feature schemas",
-      "status": "under-development",
-      "dateTimeAddition": "2023-05-19T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-building-block-examples",
-      "version": "1.0",
-      "sources": [
-        {
-          "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
-          "link": "https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7"
-        }
-      ],
-      "dependsOn": [
-        "bblocks://iso.bbr.sample.jag.mySchema",
-        "bblocks://ogc.geo.features.feature"
-      ],
-      "tags": [
-        "feature",
-        "examples"
-      ],
-      "group": "Examples",
-      "highlighted": true,
-      "shaclShapes": [
-        {
-          "prof:hasArtifact": [
-            "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/_sources/mySchema/shapes.shacl"
-          ],
-          "rdfs:seeAlso": "bblocks://iso.bbr.sample.jag.mySchema",
-          "prof:hasRole": "role:validation",
-          "dct:format": "text/turtle",
-          "dct:conformsTo": "shacl:"
-        },
-        {
-          "prof:hasArtifact": [
-            "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
-          ],
-          "rdfs:seeAlso": "bblocks://ogc.geo.features.feature",
-          "prof:hasRole": "role:validation",
-          "dct:format": "text/turtle",
-          "dct:conformsTo": "shacl:"
-        }
-      ],
-      "dateOfLastChange": "2026-11-10",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/annotated/bbr/sample/jag/myFeature/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/annotated/bbr/sample/jag/myFeature/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/_sources/myFeature/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/annotated/bbr/sample/jag/myFeature/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/annotated/bbr/sample/jag/myFeature/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/_sources/myFeature/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/avillar/bblocks-nov10-jag/blob/master/build/tests/bbr/sample/jag/myFeature/",
-      "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/generateddocs/json-full/bbr/sample/jag/myFeature/index.json"
-        },
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/generateddocs/markdown/bbr/sample/jag/myFeature/index.md"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/bblock/iso.bbr.sample.jag.myFeature"
-        }
-      },
-      "@id": "bblocks://iso.bbr.sample.jag.myFeature",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset",
-        "bblocks:BBlock"
-      ],
-      "skos:prefLabel": "Custom Feature",
-      "openAPIDocument": null,
-      "ontology": null,
-      "rdfData": [],
-      "isProfileOf": null,
-      "isDescribedBy": null,
-      "skos:topConceptOf": {
-        "@id": "https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/"
+        "@id": "https://avillar.github.io/bblocks-nov10-jag/"
       }
     }
   ],
   "skos:hasTopConcept": [
     {
-      "@id": "bblocks://iso.bbr.sample.jag.mySchema"
-    },
-    {
-      "@id": "bblocks://iso.bbr.sample.jag.myFeature"
+      "@id": "bblocks://iso.bbr.sample.jag.route"
     }
   ]
 }

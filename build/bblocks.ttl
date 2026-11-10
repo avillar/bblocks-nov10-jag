@@ -2,153 +2,78 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://www.w3.org/ns/oa#> .
-@prefix ns2: <http://www.iana.org/assignments/> .
+@prefix ns1: <http://www.iana.org/assignments/> .
+@prefix ns2: <http://www.w3.org/ns/oa#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prof: <http://www.w3.org/ns/dx/prof/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix role: <http://www.w3.org/ns/dx/prof/role/> .
 @prefix schema: <https://schema.org/> .
-@prefix shacl: <https://www.w3.org/TR/shacl/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<bblocks://iso.bbr.sample.jag.myFeature> a skos:Concept,
+<bblocks://iso.bbr.sample.jag.route> a skos:Concept,
         dcat:Dataset,
         bblocks:BBlock,
         bblocks:Schema ;
-    rdfs:label "Custom Feature" ;
-    dct:abstract "This examples shows a simple customisation for OGC API Feature schemas"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/generateddocs/json-full/bbr/sample/jag/myFeature/index.json> ],
+    rdfs:label "Route" ;
+    dct:abstract "A route: a road or path, described as a feature with a length in metres and a line geometry."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-10-29T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://avillar.github.io/bblocks-nov10-jag/bblock/iso.bbr.sample.jag.route> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://avillar.github.io/bblocks-nov10-jag/build/generateddocs/json-full/bbr/sample/jag/route/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/generateddocs/markdown/bbr/sample/jag/myFeature/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/bblock/iso.bbr.sample.jag.myFeature> ] ;
-    dct:hasVersion "1.0" ;
+            rdfs:isDefinedBy <https://avillar.github.io/bblocks-nov10-jag/build/generateddocs/markdown/bbr/sample/jag/route/index.md> ] ;
+    dct:hasVersion "0.1" ;
     dct:modified "2026-11-10"^^xsd:date ;
-    dct:source <https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> ;
-    skos:inScheme <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/> ;
-    skos:prefLabel "Custom Feature" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/> ;
-    dcat:keyword "examples",
-        "feature" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/annotated/bbr/sample/jag/myFeature/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/annotated/bbr/sample/jag/myFeature/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/annotated/bbr/sample/jag/myFeature/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
-            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://iso.bbr.sample.jag.mySchema> ;
-            prof:hasArtifact <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/_sources/mySchema/shapes.shacl> ;
-            prof:hasRole role:validation ] ;
-    bblocks:dependsOn <bblocks://iso.bbr.sample.jag.mySchema>,
-        <bblocks://ogc.geo.features.feature> ;
+    skos:inScheme <https://avillar.github.io/bblocks-nov10-jag/> ;
+    skos:prefLabel "Route" ;
+    skos:topConceptOf <https://avillar.github.io/bblocks-nov10-jag/> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
 
-<https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> rdfs:label "OGC API - Features, Part 1, 7.16.2: Feature Response" .
-
-<https://example.com/sources/1> rdfs:label "Sample source document" .
-
-<https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/bblocks.ttl> a prov:Entity ;
+<https://avillar.github.io/bblocks-nov10-jag/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:N2ba498580910475ab1f9a245dd9d8617 ;
+    prov:wasAttributedTo _:Ne3b920b929f94148a5b601a0656f463f ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-11-10T07:20:52.170792"^^xsd:dateTime ;
-            prov:startedAtTime "2026-11-10T07:20:51.959055"^^xsd:dateTime ;
+            prov:endedAtTime "2026-11-10T07:24:32.376229"^^xsd:dateTime ;
+            prov:startedAtTime "2026-11-10T07:24:32.287183"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     dct:format "application/json" ;
-                    dct:hasVersion "git:f5430f4a5dd21f812af7b42a74e5b41c6c2ccda3" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/register.json> ],
+                    dct:hasVersion "git:8b27a68e1bdde49c9ebc4fd9562e8a6e04210e7a" ;
+                    rdfs:seeAlso <https://avillar.github.io/bblocks-nov10-jag/build/register.json> ],
                 [ a prov:Entity ;
                     dct:format "application/yaml" ;
                     rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
-            prov:wasAssociatedWith _:N2ba498580910475ab1f9a245dd9d8617 ] .
+            prov:wasAssociatedWith _:Ne3b920b929f94148a5b601a0656f463f ] .
 
-<bblocks://iso.bbr.sample.jag.mySchema> a skos:Concept,
-        dcat:Dataset,
-        bblocks:BBlock,
-        bblocks:Schema ;
-    rdfs:label "My Schema" ;
-    dct:abstract "An example schema defining the set of properties of any type of object."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/generateddocs/markdown/bbr/sample/jag/mySchema/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/bblock/iso.bbr.sample.jag.mySchema> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/generateddocs/json-full/bbr/sample/jag/mySchema/index.json> ] ;
-    dct:hasVersion "0.1" ;
-    dct:modified "2026-11-10"^^xsd:date ;
-    dct:source <https://example.com/sources/1> ;
-    skos:inScheme <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/> ;
-    skos:prefLabel "My Schema" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/> ;
-    dcat:keyword "templates" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/annotated/bbr/sample/jag/mySchema/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://iso.bbr.sample.jag.mySchema> ;
-            prof:hasArtifact <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/_sources/mySchema/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/annotated/bbr/sample/jag/mySchema/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/annotated/bbr/sample/jag/mySchema/schema.yaml> ;
-            prof:hasRole role:schema ] ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/_sources/mySchema/context.jsonld> ;
-    bblocks:status <http://www.opengis.net/def/status/under-development> ;
-    bblocks:validationPassed true .
-
-<https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/> a skos:ConceptScheme,
+<https://avillar.github.io/bblocks-nov10-jag/> a skos:ConceptScheme,
         dcat:Catalog,
         bblocks:BBlocksRegister ;
     rdfs:label "Building Blocks - ISO JAG Building Blocks register" ;
     dct:abstract """This is an example to illustrate the use of OGC Building Blocks.
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2026-11-10T07:20:49.463338"^^xsd:dateTime ;
+    dct:modified "2026-11-10T07:24:32.154515"^^xsd:dateTime ;
     owl:imports <https://opengeospatial.github.io/bblocks/register.json> ;
-    skos:hasTopConcept <bblocks://iso.bbr.sample.jag.myFeature>,
-        <bblocks://iso.bbr.sample.jag.mySchema> ;
+    skos:hasTopConcept <bblocks://iso.bbr.sample.jag.route> ;
     skos:prefLabel "Building Blocks - ISO JAG Building Blocks register" ;
     prof:hasResource [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
             dct:type "application/ld+json" ;
-            ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/bblocks.jsonld> ],
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <https://avillar.github.io/bblocks-nov10-jag/build/bblocks.jsonld> ],
         [ rdfs:label "This Building Blocks Register in JSON format" ;
             dct:type "application/json" ;
-            ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/register.json> ],
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <https://avillar.github.io/bblocks-nov10-jag/build/register.json> ],
         [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
             dct:type "text/turtle" ;
-            ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/bblocks.ttl> ] ;
-    foaf:homepage <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/> ;
-    bblocks:hasValidationReport <https://raw.githubusercontent.com/avillar/bblocks-nov10-jag/master/build/tests/report.html> .
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <https://avillar.github.io/bblocks-nov10-jag/build/bblocks.ttl> ] ;
+    foaf:homepage <https://avillar.github.io/bblocks-nov10-jag/> ;
+    bblocks:hasValidationReport <https://avillar.github.io/bblocks-nov10-jag/build/tests/report.html> .
 
-_:N2ba498580910475ab1f9a245dd9d8617 a prov:Agent,
+_:Ne3b920b929f94148a5b601a0656f463f a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.6.0" ;

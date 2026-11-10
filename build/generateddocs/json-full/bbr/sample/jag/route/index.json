@@ -1,0 +1,18 @@
+
+
+{
+  "itemIdentifier": "iso.bbr.sample.jag.route",
+  "name": "Route",
+  "abstract": "A route: a road or path, described as a feature with a length in metres and a line geometry.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-10-29T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "shaclShapes": {},
+  "dateOfLastChange": "2026-11-10",
+  "sourceFiles": "https://avillar.github.io/bblocks-nov10-jag/_sources/route/",
+  "validationPassed": true,
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/avillar/bblocks-nov10-jag",
+  "gitPath": "_sources/route"
+}
