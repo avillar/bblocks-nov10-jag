@@ -7,6 +7,88 @@ A route: a road or path, described as a feature with a length in metres and a li
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
+## Examples
+
+### Riverside route in Valencia
+A short route of two separate segments, with its length in metres.
+#### json
+```json
+{
+  "type": "Feature",
+  "id": "valencia-turia-1",
+  "geometry": {
+    "type": "MultiLineString",
+    "coordinates": [
+      [[-0.3763, 39.4699], [-0.3702, 39.4725], [-0.3651, 39.4780]],
+      [[-0.3600, 39.4810], [-0.3549, 39.4864], [-0.3490, 39.4915]]
+    ]
+  },
+  "properties": {
+    "name": "Turia riverside route",
+    "length": 200
+  }
+}
+```
+
+#### jsonld
+```jsonld
+{
+  "@context": "https://avillar.github.io/bblocks-nov10-jag/build/annotated/bbr/sample/jag/route/context.jsonld",
+  "type": "Feature",
+  "id": "valencia-turia-1",
+  "geometry": {
+    "type": "MultiLineString",
+    "coordinates": [
+      [
+        [
+          -0.3763,
+          39.4699
+        ],
+        [
+          -0.3702,
+          39.4725
+        ],
+        [
+          -0.3651,
+          39.478
+        ]
+      ],
+      [
+        [
+          -0.36,
+          39.481
+        ],
+        [
+          -0.3549,
+          39.4864
+        ],
+        [
+          -0.349,
+          39.4915
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "name": "Turia riverside route",
+    "length": 200
+  }
+}
+```
+
+#### ttl
+```ttl
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<file:///github/workspace/valencia-turia-1> a geojson:Feature ;
+    geojson:geometry [ a geojson:MultiLineString ;
+            geojson:coordinates ( ( ( -3.763e-01 3.94699e+01 ) ( -3.702e-01 3.94725e+01 ) ( -3.651e-01 3.9478e+01 ) ) ( ( -3.6e-01 3.9481e+01 ) ( -3.549e-01 3.94864e+01 ) ( -3.49e-01 3.94915e+01 ) ) ) ] .
+
+
+```
+
 ## Schema
 
 ```yaml

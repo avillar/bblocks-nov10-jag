@@ -216,7 +216,7 @@
   "metaRegistry": "https://w3id.org/ogc/bblocks/meta-register.json",
   "name": "Building Blocks - ISO JAG Building Blocks register",
   "abstract": "This is an example to illustrate the use of OGC Building Blocks.\n",
-  "modified": "2026-11-10T07:26:18.991703",
+  "modified": "2026-11-10T07:38:45.179040",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"2deb5c60331691186d997e4f6ae9aab18b548ce5",
@@ -308,6 +308,7 @@
       "resolvedSchemaProperties": "https://avillar.github.io/bblocks-nov10-jag/build/annotated/bbr/sample/jag/route/resolvedProperties.json",
       "sourceFiles": "https://avillar.github.io/bblocks-nov10-jag/_sources/route/",
       "validationPassed": true,
+      "testOutputs": "https://github.com/avillar/bblocks-nov10-jag/blob/master/build/tests/bbr/sample/jag/route/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",

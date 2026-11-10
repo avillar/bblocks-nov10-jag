@@ -1,0 +1,8 @@
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<file:///github/workspace/valencia-turia-1> a geojson:Feature ;
+    geojson:geometry [ a geojson:MultiLineString ;
+            geojson:coordinates ( ( ( -3.763e-01 3.94699e+01 ) ( -3.702e-01 3.94725e+01 ) ( -3.651e-01 3.9478e+01 ) ) ( ( -3.6e-01 3.9481e+01 ) ( -3.549e-01 3.94864e+01 ) ( -3.49e-01 3.94915e+01 ) ) ) ] .
+
