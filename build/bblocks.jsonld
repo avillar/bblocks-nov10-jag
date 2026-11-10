@@ -216,7 +216,7 @@
   "metaRegistry": "https://w3id.org/ogc/bblocks/meta-register.json",
   "name": "Building Blocks - ISO JAG Building Blocks register",
   "abstract": "This is an example to illustrate the use of OGC Building Blocks.\n",
-  "modified": "2026-11-10T07:24:32.154515",
+  "modified": "2026-11-10T07:26:18.991703",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"2deb5c60331691186d997e4f6ae9aab18b548ce5",
@@ -269,8 +269,43 @@
       "dateTimeAddition": "2026-10-29T00:00:00Z",
       "itemClass": "schema",
       "version": "0.1",
-      "shaclShapes": null,
+      "shaclShapes": [
+        {
+          "prof:hasArtifact": [
+            "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+          ],
+          "rdfs:seeAlso": "bblocks://ogc.geo.features.feature",
+          "prof:hasRole": "role:validation",
+          "dct:format": "text/turtle",
+          "dct:conformsTo": "shacl:"
+        }
+      ],
+      "dependsOn": [
+        "bblocks://ogc.geo.features.feature"
+      ],
       "dateOfLastChange": "2026-11-10",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://avillar.github.io/bblocks-nov10-jag/build/annotated/bbr/sample/jag/route/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://avillar.github.io/bblocks-nov10-jag/build/annotated/bbr/sample/jag/route/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://avillar.github.io/bblocks-nov10-jag/_sources/route/schema.yaml",
+      "ldContext": {
+        "prof:hasArtifact": "https://avillar.github.io/bblocks-nov10-jag/build/annotated/bbr/sample/jag/route/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "resolvedSchemaProperties": "https://avillar.github.io/bblocks-nov10-jag/build/annotated/bbr/sample/jag/route/resolvedProperties.json",
       "sourceFiles": "https://avillar.github.io/bblocks-nov10-jag/_sources/route/",
       "validationPassed": true,
       "documentation": {
@@ -295,12 +330,9 @@
         "bblocks:BBlock"
       ],
       "skos:prefLabel": "Route",
-      "ldContext": null,
-      "schema": null,
       "openAPIDocument": null,
       "ontology": null,
       "rdfData": [],
-      "dependsOn": null,
       "isProfileOf": null,
       "isDescribedBy": null,
       "skos:topConceptOf": {

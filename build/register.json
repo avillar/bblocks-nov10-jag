@@ -2,7 +2,7 @@
   "metaRegistry": "https://w3id.org/ogc/bblocks/meta-register.json",
   "name": "ISO JAG Building Blocks register",
   "abstract": "This is an example to illustrate the use of OGC Building Blocks.\n",
-  "modified": "2026-11-10T07:24:32.154515",
+  "modified": "2026-11-10T07:26:18.991703",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"2deb5c60331691186d997e4f6ae9aab18b548ce5",
@@ -28,8 +28,22 @@
       "dateTimeAddition": "2026-10-29T00:00:00Z",
       "itemClass": "schema",
       "version": "0.1",
-      "shaclShapes": {},
+      "shaclShapes": {
+        "ogc.geo.features.feature": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+        ]
+      },
+      "dependsOn": [
+        "bblocks://ogc.geo.features.feature"
+      ],
       "dateOfLastChange": "2026-11-10",
+      "schema": {
+        "application/yaml": "https://avillar.github.io/bblocks-nov10-jag/build/annotated/bbr/sample/jag/route/schema.yaml",
+        "application/json": "https://avillar.github.io/bblocks-nov10-jag/build/annotated/bbr/sample/jag/route/schema.json"
+      },
+      "sourceSchema": "https://avillar.github.io/bblocks-nov10-jag/_sources/route/schema.yaml",
+      "ldContext": "https://avillar.github.io/bblocks-nov10-jag/build/annotated/bbr/sample/jag/route/context.jsonld",
+      "resolvedSchemaProperties": "https://avillar.github.io/bblocks-nov10-jag/build/annotated/bbr/sample/jag/route/resolvedProperties.json",
       "sourceFiles": "https://avillar.github.io/bblocks-nov10-jag/_sources/route/",
       "validationPassed": true,
       "documentation": {
