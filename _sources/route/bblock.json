@@ -1,0 +1,8 @@
+{
+  "name": "Route",
+  "abstract": "A route: a road or path, described as a feature with a length in metres and a line geometry.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-10-29T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1"
+}
